@@ -8,6 +8,8 @@ import {
 import LayoutMain from '../components/layout/LayoutMain.vue'
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
+import AnimeList from '../views/AnimeList.vue'
+import AnimeDetail from '../views/AnimeDetail.vue'
 
 const mainRoutes: RouteRecordRaw[] = [
   {
@@ -15,6 +17,18 @@ const mainRoutes: RouteRecordRaw[] = [
     name: 'Home',
     props: true,
     component: Home,
+  },
+  {
+    path: '/animeList',
+    name: 'AnimeList',
+    props: true,
+    component: AnimeList,
+  },
+  {
+    path: '/animeDetail/:id',
+    name: 'AnimeDetail',
+    props: true,
+    component: AnimeDetail,
   },
 ]
 
